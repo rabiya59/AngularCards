@@ -1,0 +1,30 @@
+<ng-template ngFor let-user [ngForOf]="users">
+  <div class="background" *ngIf="user.id%2 === 0">
+    <div class="card-header">
+      {{user.company.name}}
+
+      <div class="card">
+        <div class="name">
+          {{user.name}}
+
+        </div>
+        <div class="info">
+
+          <p>
+            site:{{user.website}}
+          </p>
+          <p>
+            email: {{user.email}}
+          </p>
+          <p>
+            phone: {{user.phone}}
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</ng-template>
